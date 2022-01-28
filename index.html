@@ -130,10 +130,6 @@
             <span>Seconds</span>
           </div>
         </div>
-        <div class="test1"></div>
-        <div class="test2"></div>
-        <div class="test3"></div>
-        <div class="test4"></div>
         <img class="boy" src="https://acegif.com/wp-content/gifs/flag-america-usa-58.gif">
         <img class="hogan" src="https://i.gifer.com/U8v8.gif">
       </section>
@@ -159,10 +155,6 @@
         var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
         var days = Math.floor(t / (1000 * 60 * 60 * 24));
 
-        document.querySelector('.test1').innerText = `1${deadline}`
-        document.querySelector('.test2').innerText = `2 ${Date.parse(endtime) - Date.parse(new Date())}`
-        document.querySelector('.test3').innerText = `3 ${endtime}`
-        document.querySelector('.test4').innerText = `4 ${t}`
         return {
           'total': t,
           'days': days,
