@@ -130,6 +130,10 @@
             <span>Seconds</span>
           </div>
         </div>
+        <div class="test1"></div>
+        <div class="test2"></div>
+        <div class="test3"></div>
+        <div class="test4"></div>
         <img class="boy" src="https://acegif.com/wp-content/gifs/flag-america-usa-58.gif">
         <img class="hogan" src="https://i.gifer.com/U8v8.gif">
       </section>
@@ -162,6 +166,11 @@
           'seconds': seconds
         };
       }
+
+      document.querySelector('.test1').innerText(deadline)
+      document.querySelector('.test2').innerText(t)
+      document.querySelector('.test3').innerText(days)
+      document.querySelector('.test4').innerText(endtime)
 
       function updateClock(endtime) {
         var t = getTimeRemaining(endtime);
