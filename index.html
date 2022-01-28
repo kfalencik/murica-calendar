@@ -149,7 +149,7 @@
       const second1 = document.querySelector('.countdown .countdown-second1');
       const second2 = document.querySelector('.countdown .countdown-second2');
 
-      var deadline = new Date('2022-02-19 11:30:00');
+      var deadline = new Date('2022-02-19 11:30:00'.replace(/-/g, "/"));
       initializeClock(deadline);
 
       function getTimeRemaining(endtime) {
