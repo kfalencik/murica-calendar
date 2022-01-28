@@ -158,6 +158,11 @@
         var minutes = Math.floor((t / 1000 / 60) % 60);
         var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
         var days = Math.floor(t / (1000 * 60 * 60 * 24));
+
+        document.querySelector('.test1').innerText = `1${deadline}`
+        document.querySelector('.test2').innerText = `2 ${Date.parse(endtime) - Date.parse(new Date())}`
+        document.querySelector('.test3').innerText = `3 ${endtime}`
+        document.querySelector('.test4').innerText = `4 ${t}`
         return {
           'total': t,
           'days': days,
@@ -166,11 +171,6 @@
           'seconds': seconds
         };
       }
-
-      document.querySelector('.test1').innerText = `1${deadline}`
-      document.querySelector('.test2').innerText = `2 ${Date.parse(endtime) - Date.parse(new Date())}`
-      document.querySelector('.test3').innerText = `3 ${endtime}`
-      document.querySelector('.test4').innerText = `4 ${getTimeRemaining(endtime)}`
 
       function updateClock(endtime) {
         var t = getTimeRemaining(endtime);
