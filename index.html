@@ -167,10 +167,10 @@
         };
       }
 
-      document.querySelector('.test1').innerText(deadline)
-      document.querySelector('.test2').innerText(t)
-      document.querySelector('.test3').innerText(days)
-      document.querySelector('.test4').innerText(endtime)
+      document.querySelector('.test1').innerText = `1${deadline}`
+      document.querySelector('.test2').innerText = `2 ${t}`
+      document.querySelector('.test3').innerText = `3 ${days}`
+      document.querySelector('.test4').innerText = `4 ${endtime}`
 
       function updateClock(endtime) {
         var t = getTimeRemaining(endtime);
